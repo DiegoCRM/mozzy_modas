@@ -1,0 +1,109 @@
+@font-face {
+    font-family: 'SoucerSansPro';
+    src: url('../fonts/sourceSansPro/SourceSansPro-Regular.ttf');
+    font-size: 1em;
+}
+
+@font-face {
+    font-family: 'SoucerSansProLight';
+    src: url('../fonts/sourceSansPro/SourceSansPro-Light.ttf');
+    font-size: 1em;
+}
+
+@font-face {
+    font-family: 'QwitcherBold';
+    src: url('../fonts/qwitcher/QwitcherGrypen-Bold.ttf');
+    font-size: 1em;
+}
+
+@font-face {
+    font-family: 'Qwitcher';
+    src: url('../fonts/qwitcher/QwitcherGrypen-Regular.ttf');
+    font-size: 1em;
+}
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+#menu {
+    align-items: center;
+}
+
+
+#menu li {
+    display: block;
+}
+
+#menu li a {
+    text-decoration: none;
+    color: rgb(54, 51, 51);
+    font-family: 'SoucerSansProLight';
+    font-size: 1.3rem;
+}
+
+body {
+    background-color: rgb(240, 190, 233);
+}
+
+.container {
+    margin-top: 40px;
+}
+
+.row {
+    width: 100%;
+}
+
+
+#titulo h1 {
+    text-align: center;
+    font-family: 'QwitcherBold';
+    font-size: 7.5rem;
+}
+
+#home {
+    margin-top: 280px;
+}
+
+#produto {
+    margin-top: 1000px;
+}
+
+#produto img {
+    max-width:200px;
+    max-height:350px;
+
+}
+
+
+#contato h2 {
+    text-align: center;
+    font-family: 'SoucerSansPro';
+    font-size: 4rem;
+}
+
+#contato p {
+    text-align: justify;
+    font-family: 'SoucerSansProLight';
+    font-size: 1.2rem;
+}
+
+#redeSocial {
+    width: 100%;
+    text-align: center;
+}
+
+#redeSocial li {
+    display: inline-block;
+}
+
+#redeSocial li a {
+    text-decoration: none;
+    margin: 5px;
+}
+
+
+
