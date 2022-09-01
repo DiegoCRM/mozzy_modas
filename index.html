@@ -19,7 +19,7 @@
 <body>
     <header>
 
-        <div class="container">
+       <!--  <div class="container mt-1"> -->
             <div class="row">
                 <div class="col-2">
                     <img src="img/logosemfundo.png" alt="logoTipo">
@@ -29,7 +29,7 @@
                     <h1>Mozzy Modas</h1>
                 </div>
 
-                <div class="col-2 mt-4">
+                <div class="col-2 mt-4 text-center">
 
                     <nav id="menu">
                         <ul>
@@ -42,7 +42,7 @@
 
                 </div>
             </div>
-        </div>
+       <!--  </div> -->
     </header>
 
 
@@ -63,40 +63,62 @@
             </div>
 
 
-
-            <div class="items">
-                <div class="item-inner">
-                    <img src="img/roupas/roupa.jpeg">
+            <div class="row roupa owl-carousel owl-theme">
+                <div class="items">
+                    <div class="item-inner text-center">
+                        <img src="img/roupas/roupa.jpeg" style="align-items:center ;" alt="Roupas">
+                    </div>
                 </div>
-
+                
+                <div class="items">
+                    <div class="item-inner">
+                        <img src="img/roupas/roupa1.jpeg" alt="Roupas">
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="item-inner">
+                        <img src="img/roupas/roupa2.jpeg" alt="Roupas">
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="item-inner">
+                        <img src="img/roupas/roupa3.jpeg" alt="Roupas">
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="item-inner">
+                        <img src="img/roupas/roupa4.jpeg" alt="Roupas">
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="item-inner">
+                        <img src="img/roupas/roupa5.jpeg" alt="Roupas">
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="item-inner">
+                     <img src="img/roupas/roupa6.jpeg" alt="Roupas">
+                    </div>
+                 </div>
+                 <div class="items">
+                    <div class="item-inner">
+                     <img src="img/roupas/roupa7.jpeg" alt="Roupas">
+                    </div>
+                 </div>
+                 <div class="items">
+                    <div class="item-inner">
+                     <img src="img/roupas/roupa8.jpeg" alt="Roupas">
+                    </div>
+                 </div>
+                 <div class="items">
+                    <div class="item-inner">
+                     <img src="img/roupas/roupa9.jpeg" alt="Roupas">
+                    </div>
+                 </div>
             </div>
 
-            <div class="items">
-                <div class="item-inner">
-                    <img src="img/roupas/roupa1.jpeg">
-                </div>
-            </div>
 
-            <div class="items">
-                <div class="item-inner">
-                    <img src="img/roupas/roupa2.jpeg">
-                </div>
 
-            </div>
-
-            <div class="items">
-                <div class="item-inner">
-                    <img src="img/roupas/roupa3.jpeg">
-                </div>
-            </div>
-
-            <div class="items">
-                <div class="item-inner">
-                    <img src="img/roupas/roupa4.jpeg">
-                </div>
-            </div>
-
-            
 
         </div>
     </div>
@@ -140,25 +162,49 @@
 
 
     <footer>
-        <div class="container">
+        <div class="container mt-3">
             <nav id="redeSocial">
                 <ul>
                     <li>
-                        <a href="https://www.facebook.com/mozzymodas/" target="_blank"><i class="fa fa-facebook"></i></a>
+                        <a href="https://www.facebook.com/mozzymodas/" target="_blank"><i
+                                class="fa fa-facebook"></i></a>
                     </li>
                     <li>
-                        <a href="https://www.instagram.com/mozzymodas/" target="_blank"><i class="fa fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/mozzymodas/" target="_blank"><i
+                                class="fa fa-instagram"></i></a>
                     </li>
-                    
+
                 </ul>
             </nav>
         </div>
     </footer>
 
 
-
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/OwlCarousel/dist/owl.carousel.min.js"></script>
     <script src="lib/js/bootstrap.min.js"></script>
     <script src="js/arquivo.js"></script>
+
+    <script>
+        $(function () {
+            $(".roupa").owlCarousel({
+                loop: true,
+                nav: true,
+                navText: ["Anterior", "Próximo"],
+                responsive: {
+                    0: {
+                        item: 1
+                    },
+                    480: {
+                        item: 3
+                    },
+                    768: {
+                        item: 6
+                    }
+                }
+            })
+        })
+    </script>
 </body>
 
 </html>
