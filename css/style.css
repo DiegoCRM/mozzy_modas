@@ -27,6 +27,17 @@ header {
     top: 0;
     left: 0;
     z-index: 2;
+    height: 100px;
+}
+
+#header.scrollHide {
+    opacity: 0;
+  }
+
+#logoTipo {
+    width: 6rem;
+    height: 6rem;
+    opacity: 0.7;
 }
 
 #menu {
@@ -41,13 +52,14 @@ header {
 
 #menu li a {
     text-decoration: none;
-    color: #5e2799;
+    color: rgb(240, 190, 233);
     font-family: 'SoucerSansProLight';
     font-size: 1.3rem;
 }
 
 body {
-    background-color: rgb(240, 190, 233);
+    background-image: linear-gradient(to bottom, #5e2799, #b587e6);
+  
 }
 
 .row {
@@ -56,10 +68,10 @@ body {
 
 
 #titulo h1 {
-    color: #5e2799;
+    color: rgb(240, 190, 233);
     text-align: center;
     font-family: 'QwitcherBold';
-    font-size: 7.5rem;
+    font-size: 6rem;
 }
 
 #home {
@@ -108,7 +120,7 @@ body {
 
 
 #produto h2 {
-    color: #5e2799;
+    color: rgb(240, 190, 233);
     font-family: 'OpenSans-Light';
     font-size: 48px;
     text-transform: uppercase;
@@ -130,7 +142,7 @@ body {
 }
 
 #produto .roupa h3 {
-    color: #5e2799;
+    color: rgb(240, 190, 233);
     font-size: 18px;
     font-family: 'OpenSans';
     font-weight: bold;
