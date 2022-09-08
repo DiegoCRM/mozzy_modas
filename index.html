@@ -18,53 +18,79 @@
 
 <body>
     <header id="header">
-        
+
+
        
-            <div class="row">
-                <div class="col-2 d-flex justify-content-center mt-3">
-                    <img src="img/logosemfundo.png" alt="logoTipo" id="logoTipo">
-                </div>
-
-                <div class="col-8 " id="titulo">
-                    <h1>Mozzy Modas</h1>
-                </div>
-
-                <div class="col-2 mt-4 text-center">
-
-                    <nav id="menu">
-                        <ul>
-                            <li> <a href="#home">Home</a> </li>
-                            <li> <a href="#produto">Loja</a> </li>
-                            <li> <a href="#contato">Contato</a></li>
-                        </ul>
-                    </nav>
-
-
+            <div class="container">
+                <div class="row">
+                    <div id="titulo">
+                        <h1>Mozzy Modas</h1>
+                    </div>
                 </div>
             </div>
-       
+
+            
+      
+
     </header>
 
+    <div class="row">
+        <div class="col-6 d-flex justify-content-start mt-3">
+            <a href="#titulo"><img src="img/logosemfundo.png" alt="logoTipo" id="logoTipo"></a>
+        </div>
 
+
+
+        <div class="col-6 d-flex justify-content-end  mt-3">
+
+            <nav id="menu">
+                <ul>
+                    <li> <a href="#home">Home</a> </li>
+                    <li> <a href="#produto">Loja</a></li>
+                    <li> <a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+
+
+        </div>
+    </div>
 
 
     <div id="home">
-        <p>
-            Mussum Ipsum, cacilds vidis litro abertis. Delegadis gente finis, bibendum egestas augue arcu ut est.Mé faiz
-            elementum girarzis, nisi eros vermeio.Interessantiss quisso pudia ce receita de bolis, mais bolis eu num
-            gostis.Não sou faixa preta cumpadi, sou preto inteiris, inteiris.
-        </p>
+        <div class="container">
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="text-center">Conheça nossa História</h2>
+                </div>
+                <div class="card-body">
+                    <p>
+                        Mussum Ipsum, cacilds vidis litro abertis. Delegadis gente finis, bibendum egestas augue arcu ut
+                        est.Mé
+                        faiz
+                        elementum girarzis, nisi eros vermeio.Interessantiss quisso pudia ce receita de bolis, mais
+                        bolis eu
+                        num
+                        gostis.Não sou faixa preta cumpadi, sou preto inteiris, inteiris.
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
 
+
+
+
+
+
     <div id="produto">
-        <div class="container">
+        <div class="container mt-4">
             <div class="row text-center">
                 <h2>Roupas</h2>
             </div>
 
 
             <div class="row roupa owl-carousel owl-theme">
-                 <div class="items d-flex justify-content-center">
+                <div class="items d-flex justify-content-center">
                     <div class="item-inner">
                         <img src="img/roupas/roupa1.jpeg" alt="Roupas">
                     </div>
@@ -91,24 +117,24 @@
                 </div>
                 <div class="items d-flex justify-content-center">
                     <div class="item-inner">
-                     <img src="img/roupas/roupa6.jpeg" alt="Roupas">
+                        <img src="img/roupas/roupa6.jpeg" alt="Roupas">
                     </div>
-                 </div>
-                 <div class="items d-flex justify-content-center">
+                </div>
+                <div class="items d-flex justify-content-center">
                     <div class="item-inner">
-                     <img src="img/roupas/roupa7.jpeg" alt="Roupas">
+                        <img src="img/roupas/roupa7.jpeg" alt="Roupas">
                     </div>
-                 </div>
-                 <div class="items d-flex justify-content-center">
+                </div>
+                <div class="items d-flex justify-content-center">
                     <div class="item-inner">
-                     <img src="img/roupas/roupa8.jpeg" alt="Roupas">
+                        <img src="img/roupas/roupa8.jpeg" alt="Roupas">
                     </div>
-                 </div>
-                 <div class="items d-flex justify-content-center">
+                </div>
+                <div class="items d-flex justify-content-center">
                     <div class="item-inner">
-                     <img src="img/roupas/roupa9.jpeg" alt="Roupas">
+                        <img src="img/roupas/roupa9.jpeg" alt="Roupas">
                     </div>
-                 </div>
+                </div>
             </div>
 
 
@@ -119,13 +145,13 @@
 
 
     <div id="contato">
-        <div class="container">
+        <div class="container mt-4">
             <div class="card">
                 <div class="card-header">
                     <h2>Sobre Nós</h2>
                 </div>
                 <div class="card-body">
-                    <div class="container" style="background-color: #fff;">
+                    <div class="container">
                         <p>
                             Mussum Ipsum, cacilds vidis litro abertis. Copo furadis é disculpa de bebadis, arcu quam
                             euismod
@@ -179,26 +205,7 @@
     <script src="lib/js/bootstrap.min.js"></script>
     <script src="js/arquivo.js"></script>
 
-    <script>
-        $(function () {
-            $(".roupa").owlCarousel({
-                loop: true,
-                nav: true,
-                navText: ["Anterior", "Próximo"],
-                responsive: {
-                    0: {
-                        item: 1
-                    },
-                    480: {
-                        item: 3
-                    },
-                    768: {
-                        item: 6
-                    }
-                }
-            })
-        })
-    </script>
+
 </body>
 
 </html>

@@ -12,3 +12,24 @@ window.addEventListener('scroll', () => {
          }
        }
 })
+
+
+
+$(function () {
+  $(".roupa").owlCarousel({
+      
+      nav: true,
+      navText: ['<i class="fa fa-backward"></i>','<i class="fa fa-forward"></i>'],
+      responsive: {
+          0: {
+              item: 1
+          },
+          480: {
+              item: 3
+          },
+          768: {
+              item: 6
+          }
+      }
+  })
+})
